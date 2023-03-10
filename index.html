@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT 민팅사이트 Temp !!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/utility.js"></script>
+    <script src="/js/bignumber.js"></script>
+    <script src="/js/mintScript.js"></script>
+</head>
+
+<body>
+<h1>NFT MINT</h1>
+<h2>MINTING INFO</h2>
+<p id="blockTimestamp">Current Time:</p>
+<p id="mintStartBlockTimestamp">Minting starts at:</p>
+<p id="mintPrice">Minting Price: 0 Eth</p>
+<p id="mintLimitPerBlock">Max amount per transaction: 0</p>
+<hr/>
+<h2>MY WALLET</h2>
+<button onclick="connect()">Connect Wallet</button>
+<p id="myWallet">Wallet Address: Not Connected</p>
+<p id="myEth">Balance: Not Connected</p>
+<hr/>
+<h2>MINT</h2>
+<p id="mintCnt">0 / 0</p>
+<label for="amount">Minting amount</label>
+<input type="number" id="amount" name="amount" min="1" max="3" value="1">
+<button onclick="publicMint()">Mint</button>
+<hr/>
+
+
+<p>You can check the minted NFTs in <a href="https://testnets.opensea.io/" target="_blank">Test Opensea</a>.</p>
+
+</body>
+
+</html>
